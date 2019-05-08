@@ -140,7 +140,7 @@ for a=1:length(alpha)
     test_error(a) = 100*(1-(sum(not(xor(t_test_label,t_data_label)))/size(t_data_label,1)));
     
     if mod(a,20)==0
-        display(['test iteration alpha #',num2str(a),' error = ',num2str(train_error(a)),'%']);
+        display(['test iteration alpha #',num2str(a),' error = ',num2str(test_error(a)),'%']);
     end
 end
 
